@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+  
+    <title>Marmeto Coding Assessment By Varaprasad</title>
+
+</head>
+
+<body>
+    <main>
+        <div class="left">
+            <div class="product-image">
+                <img   class="product-image-img"src="./assets/pic1.jpeg" alt="" srcset="" id="picm">
+                
+            </div>
+            <div class="thumbnails">
+              <img onclick='handleProductImage(event)' src="./assets/pic1.jpeg" alt="" srcset="" id="pic">
+              <img onclick='handleProductImage(event)' src="./assets/pic3.jpeg" alt="" srcset="" id="pic">
+              <img onclick='handleProductImage(event)' src="./assets/pic2.jpeg" alt="" srcset="" id="pic">
+              <img onclick='handleProductImage(event)' src="./assets/pic1.jpeg" alt="" id="pic">
+          
+            </div>
+           
+        </div>
+        <div class="right" id="right">
+            <div></div>
+            <div> <div class="product-vendor"></div>
+            <div class="product-title"></div>
+            <hr>
+            <div class="price-percentage"><div class="price"></div>
+            <div class="percentage-off"></div></div>
+            
+            <div class="compare-at-price"></div>
+            <hr>
+            <div class="color">
+                <div class="colortext">
+                    Choose a Color
+                </div>
+                <div class="colors"></div>
+            </div>
+            <hr>
+            <div class="size">
+                <div class="sizetext">Choose a Size</div>
+                <div class="sizes"></div>
+            </div>
+            
+            <div class="quantity-addToCart" >
+               <div class="quantity">
+                    <div onclick="decrementQuantity()">-</div>
+                    <div class="quantity-value">0</div>
+                    <div onclick="incrementQuantity()">+</div>
+                </div>
+
+
+                <div class="add-to-cart">
+                    <i class="far fa-shopping-bag" style="color: #ffffff;"></i>
+                    <div onclick="addToCart()">Add to Cart</div>
+                </div>
+            </div>
+            <div class='message'></div>
+            <hr>
+            <div class="description"></div></div>
+            <div></div>
+           
+
+
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
