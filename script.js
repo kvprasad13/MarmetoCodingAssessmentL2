@@ -3,6 +3,22 @@ const cartMessage = ['', '', ''];
 const handleProductImage = (event) => {
     event.preventDefault();
 
+    document.querySelectorAll('.thumbnail').forEach((ele) => {
+
+        if (ele.classList.contains('thumbnail-design')) {
+            ele.classList.remove('thumbnail-design');
+
+
+        }
+        if (event.target.src === ele.childNodes[1].src) {
+            ele.classList.add('thumbnail-design');
+        }
+
+
+
+    });
+
+
     const productImageElement = document.querySelector('.product-image-img');
     productImageElement.src = event.target.src;
 }
@@ -10,6 +26,17 @@ const render = (product) => {
     cartMessage[0] = product.title;
     cartMessage[1] = 'Yellow';
     cartMessage[2] = 'small';
+
+
+
+
+
+
+
+
+
+
+
     const productVendorElement = document.querySelector(".product-vendor");
     productVendorElement.innerText = 'Marmeto';
 
