@@ -1,7 +1,7 @@
 # Coding Assessment L-2 Code Submission Process with Boilerplate
 
-## LiveLink:
-        https://kvprasad13.github.io/MarmetoCodingAssessmentL2/
+## Live Link:
+       https://kvprasad13.github.io/MarmetoCodingAssessmentL2/
 ## Folder Structure:
 
         project-root/
